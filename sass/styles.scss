@@ -1,0 +1,82 @@
+$primary: #5265e1; 
+$danger: #FA5959; 
+$info: #0D0E2B;
+$font-sizes: 20;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+.no-underline {
+    text-decoration: none;
+}
+.sombra {
+    width: 50rem;
+    box-shadow: 250px 100px 0px 25px $primary;    
+    border-bottom-left-radius: 8rem;
+}
+.sombra-2 {
+    width: 50rem;
+    box-shadow: -250px 100px 0px 25px $primary;    
+    border-bottom-right-radius: 8rem;    
+}
+.navbar-collapse {
+    .nav-item {
+        .nav-link.text-dark {
+            &:hover {
+                color: $danger !important;
+            }
+        }
+    }
+}
+.navbar-collapse {
+    .nav-link.text-white {
+        &:hover {
+            background-color: white !important;
+            border-color: $danger !important;
+            color: $danger !important;
+        }
+    }    
+}
+
+.btn.btn-primary {
+    &:hover {
+        color: $primary;
+        background-color: white;
+        border-color: $primary;
+    }
+}
+.btn.btn-light {
+    &:hover {
+        color: grey;
+        background-color: white;
+        border-color: grey;
+    }
+}
+.btn.btn-danger.text-white {
+    &:hover {
+        color: $danger !important;
+        background-color: white !important;
+        border-color: $danger !important;
+    }
+}
+#danger-hover {           
+    &:hover {
+        color: $danger !important;
+    }
+}
+.accordion-button {
+    &:hover {
+        color: $danger;
+    }
+}
+.nav.nav-pills {
+    .nav-link.text-white {
+        &:hover {
+            color: $danger !important;
+        }
+    }
+}
+.color-danger {
+    &:hover {
+        filter: invert(46%) sepia(90%) saturate(2593%) hue-rotate(330deg) brightness(106%) contrast(97%);
+    }
+}
