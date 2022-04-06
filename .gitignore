@@ -1,6 +1,4 @@
-node_modules
-package-lock.json  
+node_modules 
 css/styles.css
 css/styles.css.map
 material/Diseño
-sass
